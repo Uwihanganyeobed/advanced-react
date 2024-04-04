@@ -13,15 +13,15 @@ import { Form } from './Components/FormHandling/Form'
 const App = () => {
   return (
     <div>
-      {/* <FunMapper/> */}
-      {/* <PropsData/> */}
-      {/* <ChildrenProps/> */}
-      {/* <Validation/> */}
-      {/* <CartValidation/> */}
-      {/* <Event/> */}
-      {/* <States/> */}
-      {/* <ArrayStates/> */}
-      {/* <ObjectStates/> */}
+      <FunMapper/>
+      <PropsData/>
+      <ChildrenProps/>
+      <Validation/>
+      <CartValidation/>
+      <Event/>
+      <States/>
+      <ArrayStates/>
+      <ObjectStates/>
       <Form/>
     </div>
   )
