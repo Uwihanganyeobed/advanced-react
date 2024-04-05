@@ -9,11 +9,12 @@ import { States } from './Components/State/States'
 import { ArrayStates } from './Components/State/ArrayStates'
 import { ObjectStates } from './Components/State/ObjectStates'
 import { Form } from './Components/FormHandling/Form'
+import Parent from './Components/StateSharing/Parent'
 
 const App = () => {
   return (
     <div>
-      <FunMapper/>
+      {/* <FunMapper/>
       <PropsData/>
       <ChildrenProps/>
       <Validation/>
@@ -22,7 +23,8 @@ const App = () => {
       <States/>
       <ArrayStates/>
       <ObjectStates/>
-      <Form/>
+      <Form/> */}
+      {/* <Parent/> */}
     </div>
   )
 }
