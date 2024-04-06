@@ -27,6 +27,8 @@ import Accordion from "./Projects/Accordition/Accordion";
 import FormValid from "./Projects/FormValidation/FormValid";
 import Filter from "./Advanced Data Filtering Project/Filter";
 import Me from "./Me";
+import Composition from "./Components/Inheritance&Composition/Composition";
+import Inheritance from "./Components/Inheritance&Composition/Inheritance";
 
 const App = () => {
   return (
@@ -58,6 +60,8 @@ const App = () => {
      <Accordion/>
     <FormValid/>
     <Filter/> */}
+    {/* <Composition/>
+    <Inheritance/> */}
     <Me/>
     </div>
   );
