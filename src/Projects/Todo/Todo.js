@@ -23,26 +23,29 @@ function Todo() {
     setTodos((todos) => todos.filter((t) => t.id !== id));
 
   return (
-    <div className="container">
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="New Todo"
-      />
+    <div>
+      <div className="container">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="New Todo"
+        />
 
-      <button onClick={handleSubmit}>Submit</button>
+        <button onClick={handleSubmit}>Submit</button>
 
-      <ul className="todos-list">
-        {todos.map(({ text, id }) => (
-          <li key={id} className="todo">
-            <span>{text}</span>
-            <button className="close" onClick={() => removeTodo(id)}>
-              X
-            </button>
-          </li>
-        ))}
-      </ul>
+        <ul className="todos-list">
+          {todos.map(({ text, id }) => (
+            <li key={id} className="todo">
+              <span>{text}</span>
+              <button className="close" onClick={() => removeTodo(id)}>
+                X
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <p>Created and Designed by <span><a href="https://github.com/Uwihanganyeobed" style={{color:'green'}}>Obed Uwihanganye</a> </span></p>
     </div>
   );
 }

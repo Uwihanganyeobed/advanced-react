@@ -18,6 +18,14 @@ import Ref from "./Hook-Containers/Reducer-Ref/Ref";
 import DataConsumer from "./Hook-Containers/useEffect-Custom/DataConsumer";
 import Counter from "./Projects/Counter/Counter";
 import Todo from "./Projects/Todo/Todo";
+import Meal from "./Projects/Meal API/Meal";
+import Calculator from "./Projects/Calculator/Calculator";
+import ToggleBackgroundColor from "./Projects/ToogleBg/ToggleBackgroundColor";
+import HiddenSearchBar from "./Projects/Search_Icon/HiddenSearchBar";
+import Testimonials from "./Projects/Testimonials/Testimonials";
+import Accordion from "./Projects/Accordition/Accordion";
+import FormValid from "./Projects/FormValidation/FormValid";
+import Filter from "./Advanced Data Filtering Project/Filter";
 
 const App = () => {
   return (
@@ -39,9 +47,16 @@ const App = () => {
       <Reducer/> 
       <Ref/>
       <DataConsumer/> */}
-      {/* <Counter/> */}
-      <Todo/>
-     
+      {/* <Counter/>
+      <Todo/> 
+     <Meal/>
+     <Calculator/>
+     <ToggleBackgroundColor/>
+     <HiddenSearchBar/>
+     <Testimonials/>
+     <Accordion/>
+    <FormValid/> */}
+    <Filter/>
     </div>
   );
 };
