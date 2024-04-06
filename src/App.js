@@ -16,11 +16,13 @@ import Root from "./Hook-Containers/useContext/Root";
 import Reducer from "./Hook-Containers/Reducer-Ref/Reducer";
 import Ref from "./Hook-Containers/Reducer-Ref/Ref";
 import DataConsumer from "./Hook-Containers/useEffect-Custom/DataConsumer";
+import Counter from "./Projects/Counter/Counter";
+import Todo from "./Projects/Todo/Todo";
 
 const App = () => {
   return (
     <div>
-      <FunMapper/>
+      {/* <FunMapper/>
       <PropsData/>
       <ChildrenProps/>
       <Validation/>
@@ -36,7 +38,9 @@ const App = () => {
       <Root/>
       <Reducer/> 
       <Ref/>
-      <DataConsumer/>
+      <DataConsumer/> */}
+      {/* <Counter/> */}
+      <Todo/>
      
     </div>
   );
