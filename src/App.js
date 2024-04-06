@@ -30,7 +30,7 @@ import Filter from "./Advanced Data Filtering Project/Filter";
 const App = () => {
   return (
     <div>
-      {/* <FunMapper/>
+      <FunMapper/>
       <PropsData/>
       <ChildrenProps/>
       <Validation/>
@@ -46,8 +46,8 @@ const App = () => {
       <Root/>
       <Reducer/> 
       <Ref/>
-      <DataConsumer/> */}
-      {/* <Counter/>
+      <DataConsumer/>
+      <Counter/>
       <Todo/> 
      <Meal/>
      <Calculator/>
@@ -55,8 +55,8 @@ const App = () => {
      <HiddenSearchBar/>
      <Testimonials/>
      <Accordion/>
-    <FormValid/> */}
-    {/* <Filter/> */}
+    <FormValid/>
+    <Filter/>
     <p>Created and Designed by <span><a href="https://github.com/Uwihanganyeobed" style={{color:'green'}}>Obed Uwihanganye</a> </span></p>
     </div>
   );
