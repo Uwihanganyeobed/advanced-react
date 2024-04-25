@@ -103,7 +103,7 @@ const Effect = () => {
    const [data, setData]=useState([]);
    useEffect(()=>{
       async function getData(){
-         const response= await fetch( "https://jsonplaceholder.typicode.com/posts");
+         const response= await fetch( "https://render-api-test-m489.onrender.com/");
          const data= await response.json();
          if(data && data.length) setData(data);
       }
@@ -111,11 +111,16 @@ const Effect = () => {
    },[])
   return (
     <div>
-      <ul>
-         {data.map((item)=>(
-            <li key={Math.random()}>{item.body}</li>
-         ))}
+        List of Products
+             {data.map((item)=>(
+      <ul key={Math.random()} style={{display:'flex',flexDirection: 'row',gap: '4rem',margin: '1rem',width: '100%'}}>
+            <li>Id: {item.id}</li>
+            <li>Category: {item.productCategory}</li>
+            <li>Name: {item.productName}</li>
+            <li>Quantity: {item.productQuantity}</li>
+            <li>Description: {item.productDescription}</li>
       </ul>
+               ))}
     </div>
   )
 }

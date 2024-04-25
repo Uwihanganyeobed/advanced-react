@@ -62,7 +62,9 @@ const App = () => {
     <Filter/> */}
     {/* <Composition/>
     <Inheritance/> */}
-    <Me/>
+    {/* <Me/> */}
+    {/* <Effect/> */}
+    <Root/>
     </div>
   );
 };

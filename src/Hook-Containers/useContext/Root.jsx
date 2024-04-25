@@ -1,23 +1,29 @@
-import { createContext} from "react"
+import { createContext, useState } from "react";
+import {dataApi} from "../../Advanced Data Filtering Project/db/data";
 import FirstWay from "./FirstWay";
-export const data1= createContext();
-export const data2= createContext();
-export const data3= createContext();
+// {
+//   img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+//   title: "Nike Air Monarch IV",
+//   star: <AiFillStar className="rating-star" />,
+//   reviews: "(123 reviews)",
+//   prevPrice: "$140,00",
+//   newPrice: "200",
+//   company: "Nike",
+//   color: "white",
+//   category: "sneakers",
+//   date: "2021-04-06",
+// }
+
+export const data = createContext();
 const Root = () => {
-   const name="Vargas"
-   const email="obed@gmail.com"
-   const password="passcode"
+  const [dat, setDat] = useState({});
   return (
     <>
-    <data1.Provider value={name}>
-      <data2.Provider value={email}>
-         <data3.Provider value={password}>
-            <FirstWay />
-         </data3.Provider>
-      </data2.Provider>
-      </data1.Provider>  
+      <data.Provider value={[dat, setDat]}>
+        <FirstWay />
+      </data.Provider>
     </>
-  )
-}
+  );
+};
 
-export default Root
+export default Root;
